@@ -58,6 +58,21 @@ router.get('/examples/over-18', function (req, res) {
   }
 })
 
+// Branching - how much you can abstract
+
+router.get('/conditionsv1a', function (req, res) {
+  // get the answer from the query string (eg. ?over18=false)
+  var over18 = req.query.over18
+
+  if (over18 === 'false') {
+    // redirect to the relevant page
+    res.redirect('/conditionsv1b')
+  } else {
+    // if over18 is any other value (or is missing) render the page requested
+    res.render('/conditionsv1a')
+  }
+})
+
 module.exports = router
 
 // Strip off markdown extensions if present and redirect
