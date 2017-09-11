@@ -17,11 +17,19 @@ $path: "/public/images/";
 .amountdesc {
   font-size: 25px;
   font-weight: bolder;
+  display: inline-block;
+  padding-left: 0.25em;
+  width: 6.5em;
+  line-height: 0.85em;
 }
 
+.CM {
+  font-size: 0.80em;
+}
 .amounts {
-  font-size: 45px;
+  font-size: 2.5em;
   font-weight: bolder;
+  display: inline-block;
 }
 
 
